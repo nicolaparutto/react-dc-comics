@@ -16,6 +16,51 @@ img{
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+/*Utility*/
+.container{
+  margin: 0 auto;
+  width: 1200px;
+}
 
 
 /*Header style*/
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+figure img{
+  width: 80px;
+}
+
+nav ul{
+  display: flex;
+ 
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  padding: 40px 15px;
+}
+
+nav ul li a:hover{
+  border-bottom: 4px solid #0182F9;
+  color: #0182F9;
+}
+
+nav ul li a:active{
+  border-bottom: 4px solid #0182F9;
+}
+
+
+/*Main style*/
