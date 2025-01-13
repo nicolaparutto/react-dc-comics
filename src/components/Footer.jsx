@@ -52,14 +52,13 @@ const Footer = () =>{
                      </ul>
                   </div>
                </div>
-               <div>
+               <div className="footer_img">
                   <img src="img/dc-logo-bg.png" alt="" />
                </div>
             </div>
-            
          </section>
          <section className="footer_contacts">
-            <div className="container">
+            <div className="contacts container">
                <div>
                   <button className="btn">SIGN-UP NOW!</button>
                </div>

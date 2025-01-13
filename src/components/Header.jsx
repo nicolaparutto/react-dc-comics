@@ -2,7 +2,7 @@ const Header = () =>{
    return(
       <header className="container">
          <figure>
-         <img src="img/dc-logo.png" alt="Logo" />
+            <a href=""><img src="img/dc-logo.png" alt="Logo" /></a>
          </figure>
          <nav>
             <ul>
