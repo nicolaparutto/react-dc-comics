@@ -33,24 +33,28 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  height: 120px;
+}
+
+figure{
+  width: 80px;
 }
 
 figure img{
-  width: 80px;
+  width: 100%;
 }
 
 nav ul{
   display: flex;
- 
 }
 
 nav ul li{
   list-style: none;
+  padding: 0px 15px;
 }
 
 nav ul li a{
-  padding: 40px 15px;
+  padding: 46px 0px;
 }
 
 nav ul li a:hover{
@@ -74,7 +78,6 @@ section.content{
   color: #fff;
   font-size: 1.5rem;
 }
-
 /*dc_info*/
 section.dc_info{
   background-color: #0182F9;
@@ -99,3 +102,5 @@ div.col img{
 div.col p{
   color: #fff;
 }
+
+/*Footer style*/
