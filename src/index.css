@@ -24,7 +24,7 @@ a{
 /*Utility*/
 .container{
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1400px;
 }
 
 
@@ -64,3 +64,38 @@ nav ul li a:active{
 
 
 /*Main style*/
+/*content*/
+section.content{
+  background-color: #000;
+  padding: 50px 0px;
+}
+
+.content span{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/*dc_info*/
+section.dc_info{
+  background-color: #0182F9;
+  padding: 40px 0px;
+}
+
+div.row{
+  display: flex;
+  justify-content: space-around;
+}
+
+div.col{
+  display: flex;
+  align-items: center;
+}
+
+div.col img{
+  width: 50px;
+  margin-right: 15px;
+}
+
+div.col p{
+  color: #fff;
+}
