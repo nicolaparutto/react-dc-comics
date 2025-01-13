@@ -27,6 +27,19 @@ a{
   max-width: 1400px;
 }
 
+.btn{
+  color: #fff;
+  border: 2px solid #0182F9;
+  background-color: transparent;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+}
+
+.btn:hover{
+  border: 2px solid #868686;
+  color: #696969;
+}
+
 
 /*Header style*/
 header{
@@ -104,3 +117,76 @@ div.col p{
 }
 
 /*Footer style*/
+section.footer_section{
+  background-image: url('../public/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer_container{
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer_container div img{
+  width: 100%;
+  margin-top: -80px;
+  margin-bottom: -50px;
+}
+div.footer_list{
+  display: flex;
+  margin-top: 50px;
+}
+
+.footer_list div{
+  margin-right: 35px;
+}
+div.second_list_footer{
+  margin-top: 20px;
+}
+.footer_list span{
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.footer_list ul{
+  list-style: none;
+}
+
+.footer_list ul li a{
+  color: #aaaaaa;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.footer_list ul li a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
+
+section.footer_contacts{
+  background-color: #303030;
+}
+
+.footer_contacts div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+div.follow_info span{
+  color: #0182F9;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+div.follow_info ul{
+  display: flex;
+}
+
+div.follow_info ul li{
+  list-style: none;
+  margin-left: 20px;
+}
