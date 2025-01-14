@@ -3,6 +3,8 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import mainMenu from "./data/menu.js";
 import {footerShop, footerDc, footerSites} from "./data/footerLinks.js"
+
+
 const App = () => {
   return(
     <>
@@ -13,4 +15,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

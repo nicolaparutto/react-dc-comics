@@ -1,4 +1,5 @@
 const Footer = (props) =>{
+   
    const {footerDcComics, footerShop, footerDc, footerSites} = props;
    
    return(

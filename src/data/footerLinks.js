@@ -1,7 +1,7 @@
 const footerShop = [
    {id: 1, url: "#", text:"Shop DC"},
    {id: 2, url: "#", text:"Shop DC Collectibles"}
-]
+];
 
 const footerDc = [
    { id: 1, url: "#", text: "Therms Of Use" },
@@ -23,7 +23,7 @@ const footerSites = [
    { id: 3, url: "#", text: "DC Kids" },
    { id: 4, url: "#", text: "DC Universe" },
    { id: 5, url: "#", text: "DC Power Visa" }
-]
+];
 
 export {
    footerShop,
