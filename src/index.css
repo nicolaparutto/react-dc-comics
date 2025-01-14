@@ -60,6 +60,7 @@ nav ul li{
 }
 nav ul li a{
   padding: 46px 0px;
+  text-transform: uppercase;
 }
 nav ul li a:hover{
   border-bottom: 4px solid #0182F9;
@@ -157,10 +158,14 @@ div.contacts{
   align-items: center;
   padding: 20px 0px;
 }
+div.follow_info{
+  display: flex;
+  align-items: center;
+}
 div.follow_info span{
   color: #0182F9;
   font-size: 1.3rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 div.follow_info ul{
   display: flex;

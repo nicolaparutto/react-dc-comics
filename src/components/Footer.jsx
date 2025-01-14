@@ -1,4 +1,6 @@
-const Footer = () =>{
+const Footer = (props) =>{
+   const {footerDcComics, footerShop, footerDc, footerSites} = props;
+   
    return(
       <footer>
          <section className="footer_section">
@@ -8,47 +10,42 @@ const Footer = () =>{
                      <div>
                         <span>DC COMICS</span>
                         <ul>
-                           <li><a href="#">Characters</a></li>
-                           <li><a href="#">Comics</a></li>
-                           <li><a href="#">Movies</a></li>
-                           <li><a href="#">TV</a></li>
-                           <li><a href="#">Games</a></li>
-                           <li><a href="#">Videos</a></li>
-                           <li><a href="#">News</a></li>
+                           {footerDcComics.map(item =>(
+                              <li key={item.id}>
+                                 <a href={item.url}>{item.text}</a>
+                              </li>
+                           ))}
                         </ul>
                      </div>
                      <div className="second_list_footer">
                         <span>SHOP</span>
                         <ul>
-                           <li><a href="#">Shop DC</a></li>
-                           <li><a href="#">Shop DC Collectibles</a></li>
+                           {footerShop.map(item =>(
+                              <li key={item.id}>
+                                 <a href={item.url}>{item.text}</a>
+                              </li>
+                           ))}
                         </ul>
                      </div>
                   </div>
                   <div>
                      <span>DC</span>
                      <ul>
-                        <li><a href="#">Therms Of Use</a></li>
-                        <li><a href="#">Privacy policy (New)</a></li>
-                        <li><a href="#">Ad Choices</a></li>
-                        <li><a href="#">Advertising</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Subscriptions</a></li>
-                        <li><a href="#">Talent Workshops</a></li>
-                        <li><a href="#">CPSC Certificates</a></li>
-                        <li><a href="#">Ratings</a></li>
-                        <li><a href="#">Shop Help</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                     {footerDc.map(item =>(
+                        <li key={item.id}>
+                           <a href={item.url}>{item.text}</a>
+                        </li>
+                     ))}
                      </ul>
                   </div>
                   <div>
                      <span>SITES</span>
                      <ul>
-                        <li><a href="#">DC</a></li>
-                        <li><a href="#">MAD Magazine</a></li>
-                        <li><a href="#">DC Kids</a></li>
-                        <li><a href="#">DC Universe</a></li>
-                        <li><a href="#">DC Power Visa</a></li>
+                        {footerSites.map(item =>(
+                           <li key={item.id}>
+                              <a href={item.url}>{item.text}</a>
+                           </li>
+                        ))}
                      </ul>
                   </div>
                </div>
