@@ -18,34 +18,42 @@ a{
   color: #000;
 }
 
+/*variabili css*/
+:root{
+  --c-main: #0182F9;
+  --c-main-dark: #0068c9;
+  --c-black: #000;
+  --c-white: #fff;
+}
+
 /*Utility*/
 .container{
   margin: 0 auto;
   max-width: 1400px;
 }
 .btn-transp{
-  color: #fff;
-  border: 2px solid #0182F9;
+  color: var(--c-white);
+  border: 2px solid var(--c-main);
   background-color: transparent;
   padding: 15px 20px;
   font-size: 1.2rem;
   cursor: pointer;
 
   &:hover{
-    border: 2px solid #0068c9;
+    border: 2px solid var(--c-main-dark);
     color: #a8a8a8;
   }
 }
 .btn-blue{
-  background-color: #0182F9;
-  color: #fff;
+  background-color: var(--c-main);
+  color: var(--c-white);
   font-weight: 700;
   padding: 10px 50px;
   border: none;
   cursor: pointer;
 
   &:hover{
-    background-color: #0068c9;
+    background-color: var(--c-main-dark);
   }
 }
 .debug{
@@ -81,8 +89,8 @@ nav ul{
       text-transform: uppercase;
 
       &:hover{
-        border-bottom: 4px solid #0182F9;
-        color: #0182F9;
+        border-bottom: 4px solid var(--c-main);
+        color: var(--c-main);
       }
     }
   }
@@ -113,8 +121,8 @@ section.content{
   h3{
     width: 100%;
     font-size: 1.4rem;
-    color: #fff;
-    background-color: #0182F9;
+    color: var(--c-white);
+    background-color: var(--c-main);
     padding: 10px 0px;
   }
 }
@@ -146,7 +154,7 @@ section.content{
   .card_title{
     width: 210px;
     margin-top: 20px;
-    color: #fff;
+    color: var(--c-white);
     text-transform: uppercase;
     text-align: left;
   }
@@ -154,7 +162,7 @@ section.content{
 
 /*dc_info*/
 section.dc_info{
-  background-color: #0182F9;
+  background-color: var(--c-main);
   padding: 40px 0px;
 
   .info_row{
@@ -171,7 +179,7 @@ section.dc_info{
       }
 
       p{
-        color: #fff;
+        color: var(--c-white);
       }
     }
   }
@@ -203,7 +211,7 @@ section.footer_section{
   }
 
   span{
-    color: #fff;
+    color: var(--c-white);
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -218,7 +226,7 @@ section.footer_section{
       line-height: 1.5rem;
 
       &:hover{
-        color: #fff;
+        color: var(--c-white);
         text-decoration: underline;
       }
     }
@@ -247,7 +255,7 @@ div.follow_info{
   align-items: center;
 
   span{
-    color: #0182F9;
+    color: var(--c-main);
     font-size: 1.3rem;
     font-weight: 700;
   }
