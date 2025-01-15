@@ -8,12 +8,11 @@ const Main = (props) =>{
          </section>
          <section className="content">
             <div className="container content_container">
-               <div className="content_title debug">
+               <div className="content_title">
                   <h3>CURRENT SERIES</h3>
                </div>
-               <div className="cards_container debug">
-                  <div className="cards_row">
-                     <div className="cards_col">
+               <div className="cards_container">
+                  <div className="cards_col">
                         {comicsCardsContent.map(card => (
                            <div className="card" key={card.id}>
                               <div className="card_img">
@@ -24,9 +23,9 @@ const Main = (props) =>{
                               </div>
                            </div>
                         ))}
-                     </div>
                   </div>
                </div>
+               <button className="btn-blue">LOAD MORE</button>
             </div>
          </section>
          <section className="dc_info">
