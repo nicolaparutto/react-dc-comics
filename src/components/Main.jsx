@@ -1,6 +1,7 @@
-const Main = (props) =>{
-   const comicsCardsContent = props.comicsCards
+import comicsCardsContent from "../data/comicsCardsContent.js" 
+import SeriesCard from "./comicsSeries/seriesCard.jsx"
 
+const Main = () =>{
    return(
       <main>
          <section className="jumbotron">
@@ -13,16 +14,11 @@ const Main = (props) =>{
                </div>
                <div className="cards_container">
                   <div className="cards_col">
+
                         {comicsCardsContent.map(card => (
-                           <div className="card" key={card.id}>
-                              <div className="card_img">
-                                 <img src={card.thumb} alt="" />
-                              </div>
-                              <div className="card_title">
-                                 <h4>{card.series}</h4>
-                              </div>
-                           </div>
+                           <SeriesCard key={card.id} cardData={card}/>
                         ))}
+
                   </div>
                </div>
                <button className="btn-blue">LOAD MORE</button>
