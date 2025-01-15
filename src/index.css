@@ -72,14 +72,50 @@ nav ul li a:active{
 
 
 /*====Main style====*/
+/*jumbo-section*/
+section.jumbotron{
+  max-height: 410px;
+  overflow: hidden;
+}
+
 /*content*/
 section.content{
   background-color: #000;
-  padding: 50px 0px;
 }
-.content span{
+.content_container{
+  position: relative;
+}
+.content_title{
+  position: absolute;
+  top: -22px;
+  text-align: center;
+  width: 225px;
+}
+.content_title h3{
+  width: 100%;
+  font-size: 1.4rem;
   color: #fff;
-  font-size: 1.5rem;
+  background-color: #0182F9;
+  padding: 10px 0px;
+}
+/*cards section*/
+.cards_container{
+  padding-top: 80px;
+}
+
+.cards_col{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card{
+  width: calc(100% / 6);
+}
+.card_img{
+  width: 200px;
+}
+.card_title{
+  color: #fff;
 }
 /*dc_info*/
 section.dc_info{
