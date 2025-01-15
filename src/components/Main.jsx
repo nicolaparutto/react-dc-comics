@@ -1,4 +1,6 @@
-const Main = () =>{
+const Main = (props) =>{
+   const comicsCardsContent = props.comicsCards
+
    return(
       <main>
          <section className="jumbotron">
@@ -6,112 +8,23 @@ const Main = () =>{
          </section>
          <section className="content">
             <div className="container content_container">
-               <div className="content_title">
+               <div className="content_title debug">
                   <h3>CURRENT SERIES</h3>
                </div>
-               <div className="cards_container">
+               <div className="cards_container debug">
                   <div className="cards_row">
                      <div className="cards_col">
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
+                        {comicsCardsContent.map(card => (
+                           <div className="card" key={card.id}>
+                              <div className="card_img">
+                                 <img src={card.thumb} alt="" />
+                              </div>
+                              <div className="card_title">
+                                 <h4>{card.series}</h4>
+                              </div>
                            </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
-                        <div className="card">
-                           <div className="card_img">
-                              <img src="/img/dc-logo.png" alt="" />
-                           </div>
-                           <div className="card_title">
-                              <p>ciao ciao</p>
-                           </div>
-                        </div>
+                        ))}
                      </div>
-                  </div>
-                  <div>
-                     <button>LOAD MORE</button>
                   </div>
                </div>
             </div>

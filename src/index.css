@@ -34,7 +34,9 @@ a{
   border: 2px solid #868686;
   color: #696969;
 }
-
+.debug{
+  border: 2px dashed red;
+}
 
 /*====Header style====*/
 header{
@@ -100,23 +102,28 @@ section.content{
 }
 /*cards section*/
 .cards_container{
-  padding-top: 80px;
+  padding-top: 50px;
 }
-
 .cards_col{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .card{
-  width: calc(100% / 6);
+  width: calc(95% / 6);
 }
 .card_img{
-  width: 200px;
+  overflow: hidden;
+  height: 250px;
+}
+.card_img img{
+  width: 100%;
 }
 .card_title{
   color: #fff;
+  text-transform: uppercase;
 }
+
 /*dc_info*/
 section.dc_info{
   background-color: #0182F9;
