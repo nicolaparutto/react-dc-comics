@@ -5,7 +5,7 @@ const Footer = (props) =>{
    return(
       <footer>
          <section className="footer_section">
-            <div className="container footer_container">
+            <div className="footer_container container">
                <div className="footer_list">
                   <div>
                      <div>
@@ -50,7 +50,7 @@ const Footer = (props) =>{
                      </ul>
                   </div>
                </div>
-               <div className="footer_img">
+               <div className="footer_bgimg">
                   <img src="img/dc-logo-bg.png" alt="" />
                </div>
             </div>
@@ -58,7 +58,7 @@ const Footer = (props) =>{
          <section className="footer_contacts">
             <div className="contacts container">
                <div>
-                  <button className="btn">SIGN-UP NOW!</button>
+                  <button className="btn-transp">SIGN-UP NOW!</button>
                </div>
                <div className="follow_info">
                   <span>FOLLOW US</span>
