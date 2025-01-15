@@ -1,5 +1,7 @@
-import comicsCardsContent from "../data/comicsCardsContent.js" 
-import SeriesCard from "./comicsSeries/seriesCard.jsx"
+//Import array elementi seriesCard:
+import comicsCardsContent from "../data/comicsCardsContent.js";
+//Import struttura delle seriesCard:
+import SeriesCard from "./comicsSeries/seriesCard.jsx";
 
 const Main = () =>{
    return(

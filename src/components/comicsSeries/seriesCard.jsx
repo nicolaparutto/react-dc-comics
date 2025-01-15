@@ -1,5 +1,5 @@
 const seriesCard = (props) =>{
-   const {id, thumb, series} = props.cardData
+   const {id, thumb, series} = props.cardData;
    return (
       <div className="card" key={id}>
          <div className="card_img">
